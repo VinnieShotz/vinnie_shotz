@@ -1,0 +1,167 @@
+*
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .intro img {
+    max-width: 50%;
+    height:20;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.03);
+}
+.about {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 600px;
+}
+.contact {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.contact button {
+  background-color: #111;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #333;
+}
+
+.social {
+  margin-top: 30px;
+  font-size: 1.1em;
+}
+
+.social a {
+  color: #0077cc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 150px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact input,
+  .contact textarea,
+  .contact button {
+    font-size: 1em;
+  }
+}
